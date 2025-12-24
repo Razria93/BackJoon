@@ -1,0 +1,26 @@
+# Visual Studio
+.vs/
+
+# Visual Studio solution / project files
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.user
+
+# Build outputs
+Debug/
+Release/
+x64/
+x86/
+
+# Compiler artifacts
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+
+# Obsidian
+/docs_backjoon/.obsidian/
+/docs_backjoon/ignore/
