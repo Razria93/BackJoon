@@ -199,7 +199,7 @@ for (int i = 1; i <= N; ++i)
 
 int answer = std::count(vec.begin(), vec.end(), target);
 
-// 매개변수는 시작주소, 끝주소, 카운트 저장 변수
+// 매개변수는 시작주소, 끝주소, 카운트 저장 변수(비교대상)
 // 끝주소는 메모리 블럭의 끝주소이므로 N번째 요소의 시작주소 + Offset 
 // (== N + 1번째 요소의 시작주소)
 ```
@@ -244,7 +244,7 @@ std::fill(vec.begin() + startIndex, vec.begin() + (endIndex + 1), k);
 #include <vector>
 #include <algorithm>
 
-std::fill(vec.begin() + startIndex, vec.begin() + (endIndex + 1), s);
+std::iota(vec.begin() + startIndex, vec.begin() + (endIndex + 1), s);
 
 // 매개변수는 시작주소, 끝주소, 채울 연속값의 시작 값
 // 끝주소는 메모리 블럭의 끝주소이므로 N번째 요소의 시작주소 + Offset 
